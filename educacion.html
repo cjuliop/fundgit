@@ -24,6 +24,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
           style="width: 800px; height: 200px;" viewBox="300 0 100 200">
           <text x="100" y="90" fill="#f00" stroke="#000" stroke-width="1" style="font-size: 30px">Documentos de ingeniería aplicada CjPs</text>
+          <text x="680" y="120" fill="#f00" stroke="#000" stroke-width="1" style="font-size: 15px">Educación</text>
           <line x1="10" y1="10" x2="800" y2="10" style="stroke:rgb(255,0,0);stroke-width:4" />
           <line x1="10" y1="15" x2="800" y2="15" style="stroke:rgb(0,0,0);stroke-width:4" />
           <line x1="10" y1="20" x2="800" y2="20" style="stroke:rgb(255,0,0);stroke-width:4" />
@@ -35,45 +36,69 @@
           </style>
           <circle cx="60" cy="65" r="40" class="colblue"/>
           <circle cx="80" cy="65" r="20" class="colyellow"/>
-          <polyline points = "500,20 620,40 640,100 670,10 700,100 710,40 720,90" />
-    <svg>
+          <polyline points = "500,20 620,40 640,100 670,10 700,100 710,40 780,90" />
+    </svg>
+    <nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="educacion.html">Educación</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+    </ul>
+    </nav>
     <h1 align="center"> Hoja de Vida: </h1>
         <h2 align="center"> César Julio Peña Sánchez    </h2>
         <h1> Datos Personales: </h1>
         <h3> Fecha de nacimiento: 09/08/1962</h3>
         <h3> Lugar de nacimiento:  - Sogamoso. Boyacá. Colombia</h3>
-        <nav>
-        <ul>
-            <li><a title="Opcion 1" href="#">Inicio</a></lh>
-            <li><a title="Opcion 2" href="#">Educación</a></li>
-            <li><a title="Opcion 3" href="#">Experiencia</a></li>
-        </ul>
-        </nav>
-        <h2>Información Personal</h2>
-        <img src="http://bit.ly/2ZpOcdB"  alt="Mi fotografía" width="200px" height="200px" border="5">
-        <p class="texto"> Durante mi vida profesional me he desempeñado <br> como profesional en el área de la ingeniería pública<br>
-        alcanzado logros importantes en la gestión de recursos y modernización de ambientes de aprendizaje polivalentes<br>
-        modernización de procesos administrativos a través de lmplementación y uso de las TIC en ambientes colaborativos<br>
-        </p>
-        <p class="idioma" align="center">Tengo habilides para entender el idioma Inglés, puedo escribir y leer:<br>
-          <ol>
-            <li>Escritura de Inglés
-              <ol>
-                <li type="square">Nivel medio</li>
-              </ol>
-            </li>
-            <li>Lectura de Inglés
-              <ol>
-                <li type="square">Nivel medio</li>
-              </ol>
-            </li>
-            <li>Conversación Inglés
-              <ol>
-                <li type="square">Nivel bajo</li>
-              </ol>
-            </li>
-          </ol>
-        </p>
+
+        <h2>Educación</h2>
+        <table style="width:80%" border="2">
+            <tr>
+              <th>Año</th>
+              <th>Institución</th>
+              <th>Lugar</th>
+              <th>Título</th>
+            </tr>
+            <tr>
+              <td>1979</td>
+              <td>Colegio Integrado JGC</td>
+              <td>Sogamoso</td>
+              <td>Bachiellerato</td>
+            </tr>
+            <tr>
+              <td>1994</td>
+              <td>Universidad Antonio Nariño</td>
+              <td>Bogotá</td>
+              <td>Tecnología en  Información</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>UNAB</td>
+              <td>Bucaramanga</td>
+              <td>TIC y Educación</td>
+            </tr>
+        </table>
+        <form style="width:80%" action="index.html" method="post">
+          	<fieldset>
+          		<legend style="">Otros estudios</legend></br>
+          		<label for="institucion">Institución:</label>
+              <input type="text" name="institucion" id="Institución"><br>
+              <label for="ciudad">Ciudad:</label>
+              <input type="text" name="ciudad" id="Ciudad"><br>
+
+              <label for="ciudad">Año:</label>
+              <select name="Año">
+                 <option value="1">1976</option>
+                 <option value="2">1977</option>
+                 <option value="3">1978</option>
+                 <option value="4">1979</option>
+                 <option value="5">1980</option>
+                 <option value="6">Otro</option>
+              </select>
+            </fieldset>
+              <input type="submit" value="Enviar"></br>
+
+        </form>
 
   </body>
   <footer>
